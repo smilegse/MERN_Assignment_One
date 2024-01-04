@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Webpage</title>
+
+  <!-- Bootstrap CSS (you can link to a CDN or download and host locally) -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <style>
+    body {
+      padding-top: 56px; /* Adjusted for fixed navbar height */
+    }
+
+    /* Custom styles for the banner */
+    .banner {
+      background-image: url('banner-image.jpg'); /* Add your banner image URL */
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    /* Custom styles for the cards */
+    .card {
+      margin: 20px;
+    }
+
+    /* Custom styles for the footer */
+    footer {
+      background-color: #f8f9fa;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Your Logo</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Banner -->
+  <div class="banner">
+    <h1>Welcome to Our Website</h1>
+    <p>Explore amazing content and services</p>
+  </div>
+
+  <!-- Cards -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="card-image1.jpg" class="card-img-top" alt="Card Image 1">
+          <div class="card-body">
+            <h5 class="card-title">Card Title 1</h5>
+            <p class="card-text">Short description for Card 1.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="card-image2.jpg" class="card-img-top" alt="Card Image 2">
+          <div class="card-body">
+            <h5 class="card-title">Card Title 2</h5>
+            <p class="card-text">Short description for Card 2.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="card-image3.jpg" class="card-img-top" alt="Card Image 3">
+          <div class="card-body">
+            <h5 class="card-title">Card Title 3</h5>
+            <p class="card-text">Short description for Card 3.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Your Company. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS and dependencies (you can link to a CDN or download and host locally) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
