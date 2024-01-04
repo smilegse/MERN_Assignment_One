@@ -3,113 +3,143 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Webpage</title>
+  <title>Assignment One - MERN5</title>
 
-  <!-- Bootstrap CSS (you can link to a CDN or download and host locally) -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/styles.css">
 
-  <style>
-    body {
-      padding-top: 56px; /* Adjusted for fixed navbar height */
-    }
-
-    /* Custom styles for the banner */
-    .banner {
-      background-image: url('banner-image.jpg'); /* Add your banner image URL */
-      background-size: cover;
-      background-position: center;
-      color: #fff;
-      text-align: center;
-      padding: 100px 20px;
-    }
-
-    /* Custom styles for the cards */
-    .card {
-      margin: 20px;
-    }
-
-    /* Custom styles for the footer */
-    footer {
-      background-color: #f8f9fa;
-      padding: 20px 0;
-      text-align: center;
-    }
-  </style>
 </head>
 <body>
-
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand" href="#">Your Logo</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-      </ul>
+ <!-- Navbar -->
+ <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
+    <div class="container-fluid">
+        
+            <a class="navbar-brand" href="#"><img class="img-logo " src="./img/Logo.jpg" alt="Logo"></a>
+        
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">HTML</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">CSS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Javascript</a>
+            </li>
+        </ul>
+      </div>
     </div>
   </nav>
 
+
   <!-- Banner -->
   <div class="banner">
-    <h1>Welcome to Our Website</h1>
-    <p>Explore amazing content and services</p>
+    <h1 class="display-4 fw-bold">Age Checker</h1>
+    <p class="fs-4 ">Enter your age below to see if you are an adult or a child.</p>
+
+    <!-- Age Input Field -->
+    <div class="container">
+      <div class="row ">
+        <div class="col-md-12">
+            <div class="card-body">
+                <div class="col-md-6 col-sm-12 offset-md-3 d-flex">
+
+                    <div class="col-12">
+                        <input type="number" id="ageInput" onfocus="ageInputFocus()" class="ageInput" placeholder="Enter your age">
+                        <button onclick="checkAge()" class="btn btn-primary ">Check</button>
+                        <button onclick="ageClear()" class="btn btn-danger ">Clear</button> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      </div>
+      <div class="row mt-4" id="ageCard" style="display: none;">
+        <div class="col-md-6 offset-md-3">
+          <div class="card text-center">
+            <div class="card-body">
+                <h5 class="card-title" id="ageMessage"></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-4">
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="text-center fw-bold">MERN Course</h2>
+        </div>
+    </div>
   </div>
 
   <!-- Cards -->
-  <div class="container">
+  <div class="container mt-4 ">
     <div class="row">
       <div class="col-md-4">
-        <div class="card">
-          <img src="card-image1.jpg" class="card-img-top" alt="Card Image 1">
+        <div class="card shadow">
+          <img src="./img/html.png" class="card-img w-25" alt="HTML">
+          <div class="card-header">
+            <h4 class="card-title text-center fw-bold">HTML</h4>
+        </div>
           <div class="card-body">
-            <h5 class="card-title">Card Title 1</h5>
-            <p class="card-text">Short description for Card 1.</p>
+            <p class="card-text"> The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It defines the content and structure of web content. It is often assisted by technologies</p>
           </div>
+          <div class="card-footer text-center">
+            <button class="btn btn-success btn-sm">Read More</button>
+        </div>
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card">
-          <img src="card-image2.jpg" class="card-img-top" alt="Card Image 2">
-          <div class="card-body">
-            <h5 class="card-title">Card Title 2</h5>
-            <p class="card-text">Short description for Card 2.</p>
-          </div>
+        <div class="card shadow">
+           
+                <img src="./img/css.png" class="card-img w-25" alt="CSS">
+            
+            <div class="card-header">
+                <h4 class="card-title text-center fw-bold">CSS</h4>
+            </div>
+            <div class="card-body">              
+              <p class="card-text">Cascading Style Sheets is a style sheet language used for specifying the presentation and styling of a document written in a markup language such as HTML or XML. CSS is a cornerstone technology of the World Wide Web</p>
+            </div>
+            <div class="card-footer text-center">
+                <button class="btn btn-success btn-sm">Read More</button>
+            </div>
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card">
-          <img src="card-image3.jpg" class="card-img-top" alt="Card Image 3">
-          <div class="card-body">
-            <h5 class="card-title">Card Title 3</h5>
-            <p class="card-text">Short description for Card 3.</p>
-          </div>
+        <div class="card shadow">
+            <img src="./img/js.png" class="card-img w-25" alt="JAVASCRIPT">
+            <div class="card-header">
+                <h4 class="card-title text-center fw-bold">JAVASCRIPT</h4>
+            </div>
+            <div class="card-body">
+              <p class="card-text">JavaScript, often abbreviated as JS, is a programming language and core technology of the World Wide Web, alongside HTML and CSS. As of 2023, 98.7% of websites use JavaScript on the client side for webpage behavior </p>
+            </div>
+            <div class="card-footer text-center">
+                <button class="btn btn-success btn-sm">Read More</button>
+            </div>
         </div>
       </div>
     </div>
   </div>
 
   <!-- Footer -->
-  <footer>
-    <p>&copy; 2024 Your Company. All rights reserved.</p>
+  <footer class="text-center mt-4">
+    <p class="mb-0">&copy; 2024 Md. Abu Bakar Siddiuqe All rights reserved.</p>
   </footer>
 
-  <!-- Bootstrap JS and dependencies (you can link to a CDN or download and host locally) -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ <script src="./js/bootstrap.bundle.min.js"></script>
+ <script src="./js/my-script.js"></script>
+ 
 
 </body>
 </html>
