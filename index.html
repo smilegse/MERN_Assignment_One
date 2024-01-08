@@ -7,16 +7,14 @@
 
   <link rel="stylesheet" href="./css/bootstrap.css">
   <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/all.min.css">
 
 </head>
 <body>
  <!-- Navbar -->
  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
     <div class="container-fluid">
-        
-            <a class="navbar-brand" href="#"><img class="img-logo " src="./img/Logo.jpg" alt="Logo"></a>
-        
-      
+        <a class="navbar-brand" href="#"><img class="img-logo " src="./img/Logo.jpg" alt="Logo"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -85,7 +83,7 @@
   <!-- Cards -->
   <div class="container mt-4 ">
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-md-6 col-lg-4">
         <div class="card shadow">
           <img src="./img/html.png" class="card-img w-25" alt="HTML">
           <div class="card-header">
@@ -99,11 +97,9 @@
         </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-6 col-lg-4">
         <div class="card shadow">
-           
-                <img src="./img/css.png" class="card-img w-25" alt="CSS">
-            
+            <img src="./img/css.png" class="card-img w-25" alt="CSS">
             <div class="card-header">
                 <h4 class="card-title text-center fw-bold">CSS</h4>
             </div>
@@ -115,7 +111,7 @@
             </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-6 col-lg-4">
         <div class="card shadow">
             <img src="./img/js.png" class="card-img w-25" alt="JAVASCRIPT">
             <div class="card-header">
@@ -129,11 +125,80 @@
             </div>
         </div>
       </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card shadow">
+            <img src="./img/mongo.png" class="card-img w-25" alt="MongoDb">
+            <div class="card-header">
+                <h4 class="card-title text-center fw-bold">MONGODB</h4>
+            </div>
+            <div class="card-body">
+              <p class="card-text">MongoDB is a source-available, cross-platform, document-oriented database program. Classified as a NoSQL database product, MongoDB utilizes JSON-like documents with optional schemas. MongoDB is developed by MongoDB Inc.  </p>
+            </div>
+            <div class="card-footer text-center">
+                <button class="btn btn-success btn-sm">Read More</button>
+            </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card shadow">
+            <img src="./img/express.png" class="card-img w-25" alt="ExpressJs">
+            <div class="card-header">
+                <h4 class="card-title text-center fw-bold">EXPRESSJS</h4>
+            </div>
+            <div class="card-body">
+              <p class="card-text">Express.js, or simply Express, is a back end web application framework for building RESTful APIs with Node.js, released as free and open-source software under the MIT License. It is designed for building web applications and APIs </p>
+            </div>
+            <div class="card-footer text-center">
+                <button class="btn btn-success btn-sm">Read More</button>
+            </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card shadow">
+            <img src="./img/node.png" class="card-img w-25" alt="NODEJS">
+            <div class="card-header">
+                <h4 class="card-title text-center fw-bold">NODEJS</h4>
+            </div>
+            <div class="card-body">
+              <p class="card-text">Node.js is a cross-platform, open-source JavaScript runtime environment that can run on Windows, Linux, Unix, macOS, and more. Node.js runs on the V8 JavaScript engine, and executes JavaScript code outside a web browser </p>
+            </div>
+            <div class="card-footer text-center">
+                <button class="btn btn-success btn-sm">Read More</button>
+            </div>
+        </div>
+      </div>
     </div>
   </div>
 
   <!-- Footer -->
-  <footer class="text-center mt-4">
+  <div class="container-flex pt-1 pb-1 bg-dark-subtle mt-4">
+    <div class="row mx-5 my-5 mb-0">
+      <div class="col-lg-3 col-4 col-sm-6 col-12 mb-4">
+          <h5 class="footer-title-header">Follow Me</h5>
+          <img class="img-logo" src="./img/Logo.jpg" alt="Logo">
+      </div>
+      <div class="col-lg-3 col-4 col-sm-6 col-12 mb-4">
+          <h5 class="footer-title-header">Address</h5>
+          <p><i class="fa-solid fa-address-card"></i> 61, Mehedibug Housing, Adabor, Dhaka</p>
+          <p><i class="fa-solid fa-mobile-screen"></i> 01780494949</p>
+          <p><i class="fa-regular fa-envelope"></i> <a href="mailto:abms.siddique@gmail.com">abms.siddique@gmail.com</a></p>
+      </div>
+      <div class="col-lg-3 col-4 col-sm-6 col-12 mb-4">
+          <h5 class="footer-title-header">Important Links</h5>
+              <a href="#">About Me</a><br>
+              <a href="#">Html</a><br>
+              <a href="#">CSS</a><br>
+              <a href="#">Javascript</a>
+      </div>
+      <div class="col-lg-3 col-4 col-sm-6 col-12 mb-4">
+          <h5 class="footer-title-header">Legal</h5>
+          <a href="#">Refund Policy</a><br>
+          <a href="#">Terms & Condition</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-center">
     <p class="mb-0">&copy; 2024 Md. Abu Bakar Siddiuqe All rights reserved.</p>
   </footer>
 

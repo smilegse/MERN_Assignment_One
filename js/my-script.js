@@ -12,7 +12,6 @@ ageInput.addEventListener("keypress", function(event) {
   }
 }); 
 
-
 function ageInputFocus(){
   ageInput.value='';
   var resultCard = document.getElementById("ageCard");
@@ -25,10 +24,10 @@ function ageClear() {
 }
 
 function checkAge() {
-  // Get the entered age from the input field
+  // Get the age from the input field
   var age = document.getElementById("ageInput").value;
 
-  // Convert the age to a number (assuming it's a valid number)
+  // Convert the age to a number
   age = parseInt(age);
 
   // Check if the age is greater than or equal to 18
@@ -41,7 +40,6 @@ function checkAge() {
     } else {
       resultMessage.textContent = "You are a child.";
     }
-
     // Display the result card
     resultCard.style.display = "block";
   } else {
